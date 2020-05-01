@@ -7,8 +7,8 @@ class School
   end 
   
   def add_student(student, level)
-    # this sort of means #=> a || a = b ... or #=> x || x = y
-    # it's freak'n weird
+    
+   
     roster[level] ||= []
     roster[level] << student
   end 
@@ -21,15 +21,7 @@ class School
     end 
   end 
   
-# This works, but it isn't passing learn.co's tests cause of 
-# how it displays syntactically...but the same information is there
-#  def sort 
-#    roster.sort_by do |x, y| 
-#      x 
-#    end 
-#  end 
 
-# Here's learn.co's solution:
 def sort 
   nu_hash = {}
   roster.each do |x, y| 
@@ -39,7 +31,6 @@ def sort
 end 
   
 end 
-
 
 
 school = School.new("Bayside High School")
